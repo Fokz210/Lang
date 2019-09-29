@@ -6,7 +6,7 @@
 #include <unordered_map>
 #include <cmath>
 
-#include "D:/TX/TX/TXLib.h"
+#include "C:\Users\chere\source\TX\TXLib.h"
 
 #define IC_SYNTAXSERT(a)     if (!(a)) { $r printf_s ("Seems like you have a compilation error:\n" "%s\n" "%*s^\n", input, S[P].position_, ""); $d throw "syntax error"; }
 #define IC_RUNTIMEASSERT(a)  if (!(a)) { $r printf_s ("Seems like you have a runtime error:\n"     "%s\n" "%*s^\n", input, S[P].position_, ""); $d throw "runtime error"; }
@@ -21,7 +21,6 @@ public:
 	descenter (const char * data = "");
 	void parser ();
 	void analyse ();
-	void run ();
 
 	descTree::descNode * GetG ();
 	descTree::descNode * GetE ();
@@ -35,7 +34,7 @@ public:
 	descTree::descNode * GetIF ();
 	descTree::descNode * GetLOOP ();
 
-	int nodeRunner (descTree::descNode * node);
+	double nodeRunner (descTree::descNode * node);
 
 private:
 	const char * input;

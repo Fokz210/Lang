@@ -10,7 +10,7 @@ public:
 	public:
 		struct OPERPTR
 		{
-			std::string oper;
+			op_t oper;
 			descNode* ptr = nullptr;
 		};
 

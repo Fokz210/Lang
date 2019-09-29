@@ -1,7 +1,6 @@
 
-#define _TX_ALLOC_BREAK 299
 
-#include "D:/TX/TX/TXLib.h"
+#include "C:\Users\chere\source\TX\TXLib.h"
 #include <string>
 #include "descenter.h"
 #include "list.h"
